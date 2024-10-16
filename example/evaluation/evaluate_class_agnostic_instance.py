@@ -403,7 +403,7 @@ def main():
     #     val_split = f.readlines()
     # val_split = [s.strip()+'.txt' for s in val_split]
     
-    pred_files = ['scene0644_00.txt']
+    pred_files = ['scene0011_00.txt', 'scene0644_00.txt']
     # pred_files = sorted(val_split)
     
     if(len(pred_files)<5): 
