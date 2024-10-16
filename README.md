@@ -73,13 +73,15 @@ We follow the evaluatation process in [SAI3D](https://github.com/yd-yin/SAI3D). 
 
 ### Example for evaluation
 We provide an example for converting SAM3D-like masks (stored in pth) to the format desired and evaluate the AP values. 
-      1. (Optional if your mask format does not align) Run `python exportlabel.py` in your terminal
-      2. Start evaluation
+   1. Align format of masks
+      ```bash
+      cd example
+      python exportlabel.py
+      ```
+   3. Start evaluation
       ```bash
       conda activate eval
-      python evaluation/evaluate_class_agnostic_instance.py \
-      --pred_path=PREDICTION_DIR \
-      --gt_path=GT_DIR
+      python evaluation/evaluate_class_agnostic_instance.py --pred_path=PREDICTION_DIR --gt_path=GT_DIR
       ```
 
 ## SA3DIP
