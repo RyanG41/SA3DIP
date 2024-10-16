@@ -63,15 +63,22 @@ We follow the evaluatation process in [SAI3D](https://github.com/yd-yin/SAI3D). 
 
       The `scenexxxx_xx.txt` at the bottom provides the path of each instance of current scene to the evaluation script. It contains many `scenexxxx_xx_pred_mask/scenexxxx_xx_n.txt 1 1.000000`. The `1` and `1.000000` indicate label_id and confidence, but we set them all to value 1 since we store every instance in separate txt files and we don't consider confidence here.
 
-      We provide an example for converting SAM3D-like masks (stored in pth) to the format desired in `/example_maskformat`. You can simply run `python exportlabel.py` in your terminal.
    3. Start evaluation
       ```bash
+      
+      ```
+      The numerical results will be saved under the directory of your predictions by default.
+
+### Example for evaluation
+We provide an example for converting SAM3D-like masks (stored in pth) to the format desired and evaluate the AP values. 
+      1. (Optional if your mask format does not align) Run `python exportlabel.py` in your terminal
+      2. Start evaluation
+      ```bash
+      conda activate eval
       python evaluation/evaluate_class_agnostic_instance.py \
       --pred_path=PREDICTION_DIR \
       --gt_path=GT_DIR
       ```
-
-   The numerical results will be saved under the directory of your predictions by default.
 
 ## SA3DIP
 ### Codes will be available soon, please stay tuned!
