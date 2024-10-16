@@ -65,7 +65,9 @@ We follow the evaluatation process in [SAI3D](https://github.com/yd-yin/SAI3D). 
 
    3. Start evaluation
       ```bash
-      
+      python evaluation/evaluate_class_agnostic_instance.py \
+      --pred_path=PREDICTION_DIR \
+      --gt_path=GT_DIR
       ```
       The numerical results will be saved under the directory of your predictions by default.
 
