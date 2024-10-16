@@ -66,8 +66,8 @@ We follow the evaluatation process in [SAI3D](https://github.com/yd-yin/SAI3D). 
    3. Start evaluation
       ```bash
       python evaluation/evaluate_class_agnostic_instance.py \
-      --pred_path=PREDICTION_DIR \
-      --gt_path=GT_DIR
+      --pred_path PREDICTION_DIR \
+      --gt_path GT_DIR
       ```
       The numerical results will be saved under the directory of your predictions by default.
 
@@ -78,11 +78,12 @@ We provide an example for converting SAM3D-like masks (stored in pth) to the for
       cd example
       python exportlabel.py
       ```
+      `exportlabel.py` requires torch to read the pth file. You can use any python environment with any version of torch since it only uses the load function. This would create a folder `SAM3D_txt` storing the masks with desired format.
    3. Start evaluation
       ```bash
       conda activate eval
-      python evaluation/evaluate_class_agnostic_instance.py --pred_path=PREDICTION_DIR --gt_path=GT_DIR
+      python evaluation/evaluate_class_agnostic_instance.py --pred_path SAM3D_txt --gt_path [path_to_your_gt_folder]
       ```
-
+      The numerical results will be saved under SAM3D_txt by default.
 ## SA3DIP
 ### Codes will be available soon, please stay tuned!
