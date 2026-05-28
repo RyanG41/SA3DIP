@@ -1,5 +1,5 @@
 #region growing on scannetpp
-# source YOUR_CONDA_PATH/bin/activate opensai
+# source YOUR_CONDA_PATH/bin/activate sa3dip
 
 #set the parameters below
 # SCENE_ID='scene0011_00'
@@ -19,7 +19,7 @@ COLOR_WEIGHT='0.04'
 HEAD="color_revised"
 EVAL_DIR="data/ScanNet/results/${HEAD}"   # directory to export results
 
-python sai3d.py \
+python sa3dip.py \
  --KThresh=$KTHRESH\
  --colorWeight=$COLOR_WEIGHT \
  --base_dir=$BASE_DIR \
