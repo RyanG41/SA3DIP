@@ -95,8 +95,8 @@ We provide an example for converting SAM3D-like masks (stored in pth) to the for
 Prepare environment
 
 ```bash
-conda create -n sai3d python=3.8
-conda activate sai3d
+conda create -n sa3dip python=3.8
+conda activate sa3dip
 pip install torch==1.13.1+cu117 torchvision==0.14.1+cu117 torchaudio==0.13.1 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install open3d natsort matplotlib tqdm opencv-python scipy plyfile
 ```
