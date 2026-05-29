@@ -213,3 +213,22 @@ data
 #### Visualize class-agnostic results
    Functions in [helpers/visualize.py](helpers/visualize.py) are used to transform the results in txt form into mesh(.ply) for visualization.
 
+
+## Acknoledgments
+
+We would like to thank the authors of <a href="https://github.com/yd-yin/SAI3D">SAI3D</a> and <a href="https://github.com/V-DETR/V-DETR">V-DETR</a> for their works which were used for our model.
+</div>
+
+## BibTeX :pray:
+
+```
+@inproceedings{yang2024sa3dip,
+  title={{Sa3dip}: Segment any 3d instance with potential 3d priors},
+  author={Yang, Xi and Gu, Xu and Yin, Xingyilang and Gao, Xinbo},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2024}
+}
+
+```
+
+
